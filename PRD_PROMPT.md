@@ -1,3 +1,7 @@
+My claude sonnet 4.0 chat about the name of the product:
+
+https://console.anthropic.com/workbench/59e71927-4e8a-47af-8c34-b91ebe328fa8
+
 //////////////////////////////////////////////////////////////////////////////////
 From: https://www.reddit.com/r/ChatGPTPromptGenius/comments/1jck1fv/chatgpt_prompt_of_the_day_professional_prd/
 //////////////////////////////////////////////////////////////////////////////////

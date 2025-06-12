@@ -1,4 +1,4 @@
-A simple utility to import bookmarks into Karakeep, using the Raindrop API.
+RainBridge is a simple utility to import bookmarks into Karakeep, using the Raindrop API.
 
 API Rate Limiting and Throttling: Handling rate limiting is crucial. You'll want to implement robust error handling and potentially exponential backoff strategies to ensure the batch operations are reliable. You might also consider allowing users to configure the throttling limits.
 
