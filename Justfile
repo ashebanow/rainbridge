@@ -9,8 +9,8 @@ default:
 
 # Build the application binary
 build:
-    @echo "Building $(BINARY_NAME)..."
-    @go build -o ./bin/$(BINARY_NAME) ./cmd/rainbridge
+    @echo "Building {{BINARY_NAME}}..."
+    @go build -o ./bin/{{BINARY_NAME}} ./cmd/rainbridge
 
 # Run the application
 run:
@@ -34,9 +34,9 @@ test:
 # Cross-compile for different platforms
 build-all:
     @echo "Building for all platforms..."
-    @GOOS=linux GOARCH=amd64 go build -o ./bin/$(BINARY_NAME)-linux-amd64 ./cmd/rainbridge
-    @GOOS=windows GOARCH=amd64 go build -o ./bin/$(BINARY_NAME)-windows-amd64.exe ./cmd/rainbridge
-    @GOOS=darwin GOARCH=amd64 go build -o ./bin/$(BINARY_NAME)-darwin-amd64 ./cmd/rainbridge
+    @GOOS=linux GOARCH=amd64 go build -o ./bin/{{BINARY_NAME}}-linux-amd64 ./cmd/rainbridge
+    @GOOS=windows GOARCH=amd64 go build -o ./bin/{{BINARY_NAME}}-windows-amd64.exe ./cmd/rainbridge
+    @GOOS=darwin GOARCH=amd64 go build -o ./bin/{{BINARY_NAME}}-darwin-amd64 ./cmd/rainbridge
 
 # --- Packaging (Placeholders) ---
 

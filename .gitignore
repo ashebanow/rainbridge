@@ -1,0 +1,19 @@
+# Go binaries
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# Output files
+*.out
+
+# Local environment variables
+.env
+
+# Dependency directory (if you vendor)
+vendor/
