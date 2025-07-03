@@ -19,7 +19,7 @@ run:
 # Run unit tests
 test-unit:
     @echo "Running unit tests..."
-    @go test -v -short ./...
+    @go test -v ./...
 
 # Run integration tests (requires API tokens)
 test-integration:
