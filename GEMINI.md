@@ -49,3 +49,44 @@ RainBridge is a command-line utility designed to streamline the process of impor
 
 ## Project Repository:
 - This project's GitHub repository: `https://github.com/ashebanow/rainbridge`
+
+## Justfile Cheatsheet
+
+This section provides a quick reference for `justfile` syntax and common patterns used in this project.
+
+### Variables:
+- Define variables using `VAR_NAME := "value"`.
+- Access variables within recipes using `{{VAR_NAME}}`.
+
+### Recipes (Tasks):
+- Define a recipe with its name followed by a colon, e.g., `my-task:`.
+- Commands within a recipe are indented.
+- Use `@` before a command to prevent `just` from echoing the command itself.
+
+### Passing Arguments to Recipes:
+- Define arguments in the recipe signature, e.g., `my-task ARG:`.
+- Access arguments within the recipe using `{{ARG}}`.
+
+### Multi-line Shell Scripts (using Shebang):
+- For complex shell logic or when `just`'s parsing is problematic, start the recipe with a shebang (e.g., `#!/bin/bash`).
+- This tells `just` to pass the entire recipe body to the specified shell.
+- Inside a shebang-driven recipe, arguments passed to the `just` command (e.g., `just my-task ARG=value`) are available as shell environment variables (e.g., `$ARG`).
+
+**Example:**
+```justfile
+# Variables
+PROJECT_NAME := "my-app"
+
+# A simple recipe
+hello:
+    @echo "Hello from {{PROJECT_NAME}}"
+
+# A recipe with an argument and shebang
+greet NAME:
+    #!/bin/bash
+    echo "Hello, ${NAME}! This is ${PROJECT_NAME}."
+
+# How to call:
+# just hello
+# just greet NAME=Alice
+```

@@ -40,6 +40,20 @@ build-all:
 
 # --- Packaging (Placeholders) ---
 
+# Generate Homebrew formula
+homebrew-release VERSION:
+    #!/usr/bin/env bash
+    echo "Generating Homebrew formula for v{{VERSION}}..."
+    scripts/generate_homebrew_formula.sh "{{VERSION}}" > rainbridge.rb
+    echo "Homebrew formula generated: rainbridge.rb"
+    echo "Run `just homebrew-publish-pr VERSION={{VERSION}}` to create pull request"
+
+homebrew-publish-pr VERSION:
+    #!/usr/bin/env bash
+    echo "Publishing Homebrew PR for v{{VERSION}}..."
+    scripts/publish_homebrew_pr.sh "{{VERSION}}"
+    echo "Homebrew PR process complete."
+
 # TODO: Implement packaging for Homebrew
 package-homebrew:
     @echo "Packaging for Homebrew (TODO)"
