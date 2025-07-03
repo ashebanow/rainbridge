@@ -8,8 +8,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/thiswillbeyourgithub/rainbridge/internal/karakeep"
-	"github.com/thiswillbeyourgithub/rainbridge/internal/raindrop"
+	"github.com/ashebanow/rainbridge/internal/karakeep"
+	"github.com/ashebanow/rainbridge/internal/raindrop"
 )
 
 func TestRunImport(t *testing.T) {

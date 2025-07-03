@@ -3,10 +3,10 @@ package main
 import (
 	"log"
 
-	"github.com/thiswillbeyourgithub/rainbridge/internal/config"
-	"github.com/thiswillbeyourgithub/rainbridge/internal/importer"
-	"github.com/thiswillbeyourgithub/rainbridge/internal/karakeep"
-	"github.com/thiswillbeyourgithub/rainbridge/internal/raindrop"
+	"github.com/ashebanow/rainbridge/internal/config"
+	"github.com/ashebanow/rainbridge/internal/importer"
+	"github.com/ashebanow/rainbridge/internal/karakeep"
+	"github.com/ashebanow/rainbridge/internal/raindrop"
 )
 
 func main() {

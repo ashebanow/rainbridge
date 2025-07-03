@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/thiswillbeyourgithub/rainbridge/internal/karakeep"
-	"github.com/thiswillbeyourgithub/rainbridge/internal/raindrop"
+	"github.com/ashebanow/rainbridge/internal/karakeep"
+	"github.com/ashebanow/rainbridge/internal/raindrop"
 )
 
 // Importer holds the clients for the Raindrop and Karakeep APIs.

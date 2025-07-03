@@ -12,6 +12,8 @@ https://github.com/karakeep-app/karakeep/blob/main/apps/web/lib/importBookmarkPa
 
 https://docs.karakeep.app/API/karakeep-api
 
+Note that this is not my github account, this is the author of the
+python API's account, so don't use it in the code for the variuous source urls. My repo URL for this project is: https://github.com/ashebanow/rainbridge.
 https://github.com/thiswillbeyourgithub/karakeep_python_api
 
 Raindrop API documentation:

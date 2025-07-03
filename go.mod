@@ -1,4 +1,4 @@
-module github.com/thiswillbeyourgithub/rainbridge
+module github.com/ashebanow/rainbridge
 
 go 1.24.4
 

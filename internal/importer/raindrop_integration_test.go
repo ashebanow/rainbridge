@@ -9,9 +9,9 @@ import (
 	"os"
 	"testing"
 
+	"github.com/ashebanow/rainbridge/internal/karakeep"
+	"github.com/ashebanow/rainbridge/internal/raindrop"
 	"github.com/joho/godotenv"
-	"github.com/thiswillbeyourgithub/rainbridge/internal/karakeep"
-	"github.com/thiswillbeyourgithub/rainbridge/internal/raindrop"
 )
 
 func TestRaindropIntegration(t *testing.T) {
