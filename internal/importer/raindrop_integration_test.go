@@ -33,6 +33,13 @@ func TestRaindropIntegration(t *testing.T) {
 	karakeepClient := karakeep.NewClient("test-token")
 	karakeepClient.SetBaseURL(karakeepServer.URL)
 
+	// Note: Since we're using a mock Karakeep server, we can't use the real cleanup
+	// as it would try to fetch/delete from the mock server.
+	// In a real Raindrop integration test that creates real data in Karakeep,
+	// you would use:
+	// cleaner := testutil.NewTestDataCleaner(karakeepClient, "[Test]")
+	// cleaner.RegisterCleanup(t)
+
 	importer := NewImporter(raindropClient, karakeepClient)
 
 	if err := importer.RunImport(); err != nil {
